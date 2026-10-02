@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+       <link rel="stylesheet"href="css/style.css">
+    </head>
+    <body>
+        <div class="box">
+        <h1>Dashboard</h1>
+        <h3 id="data"></h3>
+        </div>
+        <script>
+            let name = localStorage.getItem("donorName");
+            let blood = localStorage.getItem("bloodGroup");
+            document.getElementById("data").innerHTML = 
+            "Donor:"+name+
+            "<br>Blood Group :"+blood;
+        </script>
+    </body>
+</html>
